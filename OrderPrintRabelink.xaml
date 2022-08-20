@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrestagingProject.OrderPrintRabelink"
+             NavigationPage.HasNavigationBar="False"
+             x:Name="ContentPageOrderPrint">
+
+    <ContentPage.Resources>
+
+        <Style TargetType="Grid">
+
+            <Setter Property="VisualStateManager.VisualStateGroups">
+
+                <VisualStateGroupList>
+
+                    <VisualStateGroup x:Name="CommonStates">
+
+                        <VisualState x:Name="Selected">
+
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor"
+                                        Value="Transparent">
+                                </Setter>
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+    </ContentPage.Resources>
+    
+    <Frame CornerRadius="20" 
+           Padding="7,7,7,7"
+           BackgroundColor="#b8b8b8"
+           BorderColor="#b8b8b8"
+           x:Name="Frame1OrderPrint">
+
+        <Frame BackgroundColor="#f5f5f5"
+               CornerRadius="15"
+               BorderColor="#f5f5f5"
+               x:Name="Frame2OrderPrint"
+               Padding="7,7,7,7">
+
+            <ScrollView VerticalScrollBarVisibility="Never"
+                        HorizontalScrollBarVisibility="Never"
+                        x:Name="ScrollViewOrderPrint"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Start">
+
+                <Grid x:Name="GridOrderPrint">
+
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="Auto"
+                                       x:Name="Row0GridOrderPrint">
+                        </RowDefinition>
+
+                        <RowDefinition Height="Auto"
+                                       x:Name="Row1GridOrderPrint">
+                        </RowDefinition>
+
+                        <RowDefinition Height="Auto"
+                                       x:Name="Row2GridOrderPrint">
+                        </RowDefinition>
+
+                        <RowDefinition Height="Auto"
+                                       x:Name="Row3GridOrderPrint">
+                        </RowDefinition>
+
+                        <RowDefinition Height="Auto"
+                                       x:Name="Row4GridOrderPrint">
+                        </RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Label x:Name="GenerateQROrderPrint"
+                           Grid.Row="0"
+                           Text="Generare Cod QR"
+                           FontAttributes="Bold"
+                           FontFamily="Barlow"
+                           TextColor="Black"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           FontSize="32"
+                           Margin="0,30,0,0">
+                    </Label>
+
+                    <Label x:Name="CommandOrderPrint"
+                           Grid.Row="1"
+                           Text="Comanda:"
+                           FontAttributes="Bold"
+                           FontFamily="Barlow"
+                           TextColor="Black"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           FontSize="30"
+                           Margin="-200,50,0,0">
+                    </Label>
+
+                    <Label x:Name="SCOrderPrint"
+                           Grid.Row="2"
+                           Text="SC"
+                           FontAttributes="Bold"
+                           FontFamily="Barlow"
+                           TextColor="#023161"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           FontSize="42"
+                           Margin="0,30,0,0">
+                    </Label>
+
+                    <Label x:Name="ProductFoundOrderPrint"
+                           Grid.Row="3"
+                           Text="Produse găsite:"
+                           FontAttributes="Bold"
+                           FontFamily="Barlow"
+                           TextColor="Black"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           FontSize="30"
+                           Margin="-140,20,0,0">
+                    </Label>
+
+                    <CollectionView x:Name="CollectionViewOrderPrint" 
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    SelectionMode="Single"
+                                    Grid.Row="4">
+
+                        <CollectionView.ItemTemplate>
+
+                            <DataTemplate>
+
+                                <Frame Grid.Row="0"
+                                       Grid.Column="2"
+                                       BackgroundColor="Black"
+                                       Padding="1,1,1,1"
+                                       CornerRadius="20"
+                                       BorderColor="Black">
+                                   
+                                    <Frame BackgroundColor="#f5f5f5"
+                                           CornerRadius="20"
+                                           BorderColor="Black">
+                                        <Grid>
+
+                                            <Grid.RowDefinitions>
+
+                                                <RowDefinition Height="Auto"></RowDefinition>
+                                            </Grid.RowDefinitions>
+
+                                            <Grid.ColumnDefinitions>
+
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Grid Grid.Row="0"
+                                                  Grid.Column="0">
+
+                                                <Grid.RowDefinitions>
+
+                                                    <RowDefinition Height="Auto"></RowDefinition>
+                                                </Grid.RowDefinitions>
+
+                                                <Label Text="{Binding ItemName}"
+                                                       FontAttributes="Bold"
+                                                       HorizontalOptions="Center"
+                                                       VerticalOptions="Center"
+                                                       FontSize="30"
+                                                       FontFamily="Barlow"
+                                                       TextColor="Black"
+                                                       HeightRequest="40"
+                                                       
+                                                       VerticalTextAlignment="Center"
+                                                       HorizontalTextAlignment="Center"
+                                                       x:Name="ItemLabelOrderPrint"
+                                                       Margin="0,35,0,0">
+                                                </Label>
+                                            </Grid>
+
+                                            <ImageButton Source="print_button.png"
+                                                         WidthRequest="120"
+                                                         HeightRequest="120"
+                                                         Grid.Row="0"
+                                                         Grid.Column="2"
+                                                         Clicked="ImageButton_Clicked"
+                                                         HorizontalOptions="Center"
+                                                         Margin="0,0,10,0">
+                                            </ImageButton>
+                                        </Grid>
+                                    </Frame>
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Grid>
+            </ScrollView>
+        </Frame>
+    </Frame>
+</ContentPage>

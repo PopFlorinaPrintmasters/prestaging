@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PrestagingProject.RabelinkMenu"
+             NavigationPage.HasNavigationBar="False"
+             x:Name="ContentRabelinkMenu">
+
+    <Frame CornerRadius="20" 
+           Padding="7,7,7,7"
+           BackgroundColor="#b8b8b8"
+           BorderColor="#b8b8b8"
+           x:Name="Frame1RabelinkMenu">
+
+        <Frame BackgroundColor="#f5f5f5"
+               CornerRadius="15"
+               BorderColor="#f5f5f5"
+               x:Name="Frame2RabelinkMenu"
+               Padding="7,7,7,7">
+
+            <ScrollView VerticalScrollBarVisibility="Never"
+                        HorizontalScrollBarVisibility="Never"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Start"
+                        x:Name="ScrollViewRabelinkMenu">
+                
+                <Grid x:Name="GridRabelinkMenu">
+
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="Auto"
+                                       x:Name="Row0GridRabelinkMenu">
+                        </RowDefinition>
+                        
+
+                        <RowDefinition Height="Auto"
+                                       x:Name="Row1GridRabelinkMenu">
+                        </RowDefinition>
+
+                        <RowDefinition Height="Auto"
+                                       x:Name="Row2GridRabelinkMenu">
+                        </RowDefinition>
+
+                        <RowDefinition Height="Auto"
+                                       x:Name="Row3GridRabelinkMenu">
+                        </RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0"
+                          x:Name="Grid2RabelinkMenu"
+                          VerticalOptions="Center">
+
+                        <Grid.ColumnDefinitions>
+
+                            <ColumnDefinition Width="Auto"
+                                              x:Name="Column0Grid2RabelinkMenu">
+                            </ColumnDefinition>
+
+                            <ColumnDefinition Width="*"
+                                              x:Name="Column1Grid2RabelinkMenu">
+                            </ColumnDefinition>
+
+                            <ColumnDefinition Width="Auto"
+                                              x:Name="Column2Grid2RabelinkMenu">
+                            </ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+
+                            <RowDefinition Height="Auto"
+                                           x:Name="Row0Grid2RabelinkMenu">
+                            </RowDefinition>
+
+                            <RowDefinition Height="Auto"
+                                           x:Name="Row1Grid2RabelinkMenu">
+                            </RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <Image Grid.Column="0"
+                               Grid.Row="0"
+                               Source="rab_logo.png"
+                               x:Name="LogoRabelinkMenu"
+                               WidthRequest="120"
+                               HorizontalOptions="Start"
+                               VerticalOptions="Center"
+                               Margin="10,10,0,0">
+                        </Image>
+
+                        <Label Text="Rabelink"
+                               Grid.Column="2"
+                               Grid.Row="0"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               FontFamily="Barlow"
+                               FontSize="26"
+                               x:Name="RabelinkLabelRabelinkMenu"
+                               HorizontalOptions="End"
+                               Margin="0,20,25,0">
+                        </Label>
+
+                        <Label Text="Logistics"
+                               Grid.Column="2"
+                               Grid.Row="1"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               FontFamily="Barlow"
+                               FontSize="26"
+                               Margin="0,-60,25,0"
+                               x:Name="LogisticsLabelRabelinkMenu"
+                               HorizontalOptions="End">
+                        </Label>
+                    </Grid>
+
+                    <Label Grid.Row="1"
+                           Text="Selectează operațiunea:"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           FontFamily="Barlow"
+                           FontSize="26"
+                           x:Name="SelectOperationRabelinkMenu"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           Margin="0,150,0,0">
+                    </Label>
+
+                    <Grid Grid.Row="2"
+                          x:Name="Grid3RabelinkMeu"
+                          HorizontalOptions="Center"
+                          VerticalOptions="Center">
+
+                        <Grid.ColumnDefinitions>
+
+                            <ColumnDefinition Width="Auto"
+                                              x:Name="Column0Grid3RabelinkMenu">
+                            </ColumnDefinition>
+
+                            <ColumnDefinition Width="Auto"
+                                              x:Name="Column2Grid3RabelinMenu">
+                            </ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <ImageButton x:Name="ButtonPrintRabelinkMenu"
+                                     WidthRequest="165"
+                                     HeightRequest="90"
+                                     Source="print_rabelink.png"
+                                     Margin="0,60,0,0"
+                                     HorizontalOptions="Center"
+                                     VerticalOptions="Center"
+                                     Grid.Column="0"
+                                     Clicked="ButtonPrintRabelinkMenu_Clicked">
+                        </ImageButton>
+
+                        <ImageButton x:Name="ButtonLocationRabelinkMenu"
+                                     WidthRequest="165"
+                                     HeightRequest="90"
+                                     Source="location_rabelink.png"
+                                     Margin="35,60,0,0"
+                                     HorizontalOptions="Center"
+                                     VerticalOptions="Center"
+                                     Grid.Column="1">
+                        </ImageButton>
+                    </Grid>
+
+                    <ImageButton x:Name="ButtonProdRequestRabelinkMenu"
+                                 WidthRequest="165"
+                                 HeightRequest="90"
+                                 Source="request_product_rabelink.png"
+                                 Margin="100,40,100,0"
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 Grid.Row="3">
+                    </ImageButton>
+                </Grid>
+            </ScrollView>
+        </Frame>
+    </Frame>
+</ContentPage>
