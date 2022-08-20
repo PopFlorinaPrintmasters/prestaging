@@ -1,0 +1,76 @@
+is_global = true
+build_property.TargetFramework = net6.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PrestagingProject
+build_property.ProjectDir = C:\Users\Florina\Desktop\PrestagingProject\
+
+[C:/Users/Florina/Desktop/PrestagingProject/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PrestagingProject.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/Florina/Desktop/PrestagingProject/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PrestagingProject.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/Florina/Desktop/PrestagingProject/IncorrectLogin.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PrestagingProject.IncorrectLogin.xaml
+build_metadata.AdditionalFiles.TargetPath = IncorrectLogin.xaml
+build_metadata.AdditionalFiles.RelativePath = IncorrectLogin.xaml
+
+[C:/Users/Florina/Desktop/PrestagingProject/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PrestagingProject.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/Florina/Desktop/PrestagingProject/OrderNotFound.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PrestagingProject.OrderNotFound.xaml
+build_metadata.AdditionalFiles.TargetPath = OrderNotFound.xaml
+build_metadata.AdditionalFiles.RelativePath = OrderNotFound.xaml
+
+[C:/Users/Florina/Desktop/PrestagingProject/OrderPrintRabelink.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PrestagingProject.OrderPrintRabelink.xaml
+build_metadata.AdditionalFiles.TargetPath = OrderPrintRabelink.xaml
+build_metadata.AdditionalFiles.RelativePath = OrderPrintRabelink.xaml
+
+[C:/Users/Florina/Desktop/PrestagingProject/RabelinkLogin.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PrestagingProject.RabelinkLogin.xaml
+build_metadata.AdditionalFiles.TargetPath = RabelinkLogin.xaml
+build_metadata.AdditionalFiles.RelativePath = RabelinkLogin.xaml
+
+[C:/Users/Florina/Desktop/PrestagingProject/RabelinkMenu.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PrestagingProject.RabelinkMenu.xaml
+build_metadata.AdditionalFiles.TargetPath = RabelinkMenu.xaml
+build_metadata.AdditionalFiles.RelativePath = RabelinkMenu.xaml
+
+[C:/Users/Florina/Desktop/PrestagingProject/RabelinkPrint.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PrestagingProject.RabelinkPrint.xaml
+build_metadata.AdditionalFiles.TargetPath = RabelinkPrint.xaml
+build_metadata.AdditionalFiles.RelativePath = RabelinkPrint.xaml
+
+[C:/Users/Florina/Desktop/PrestagingProject/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PrestagingProject.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/Florina/Desktop/PrestagingProject/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PrestagingProject.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
